@@ -627,9 +627,1496 @@ b = \sum_{i=1}^N\alpha_iy_i</script><p>对于对偶形式的感知机学习算�
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/02/Sampling Methods/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="scsndango">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="scsndango的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/02/Sampling Methods/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-02 12:46:06 / 修改时间：13:36:07" itemprop="dateCreated datePublished" datetime="2019-04-02T12:46:06+08:00">2019-04-02</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Sampling-Methods"><a href="#Sampling-Methods" class="headerlink" title="Sampling Methods"></a>Sampling Methods</h3><h4 id="Markov-Chain"><a href="#Markov-Chain" class="headerlink" title="Markov Chain"></a>Markov Chain</h4><h5 id="First-Order-Markov-Chain"><a href="#First-Order-Markov-Chain" class="headerlink" title="First-Order Markov Chain"></a>First-Order Markov Chain</h5><p><img src="/2019/04/02/Sampling Methods/Sampling Methods.assets/1554181209476.png" alt="1554181209476"></p>
+<h5 id="Invariant-Distribution-不变分布"><a href="#Invariant-Distribution-不变分布" class="headerlink" title="Invariant Distribution (不变分布)"></a>Invariant Distribution (不变分布)</h5><p>​    <img src="/2019/04/02/Sampling Methods/Sampling Methods.assets/1554181381024.png" alt="1554181381024"></p>
+<h5 id="马氏链的收敛性-Convergence-Ergodicity"><a href="#马氏链的收敛性-Convergence-Ergodicity" class="headerlink" title="马氏链的收敛性(Convergence, Ergodicity)"></a>马氏链的收敛性(Convergence, Ergodicity)</h5><p><img src="/2019/04/02/Sampling Methods/Sampling Methods.assets/1554181725561.png" alt="1554181725561"></p>
+<p><strong>平稳分布（equilibrium distribution）</strong></p>
+<p><img src="/2019/04/02/Sampling Methods/Sampling Methods.assets/1554181856902.png" alt="1554181856902"></p>
+<h5 id="Detailed-Balance-Conditions-细致平稳条件"><a href="#Detailed-Balance-Conditions-细致平稳条件" class="headerlink" title="Detailed Balance Conditions 细致平稳条件"></a>Detailed Balance Conditions 细致平稳条件</h5><p><img src="/2019/04/02/Sampling Methods/Sampling Methods.assets/1554181916553.png" alt="1554181916553"></p>
+<h5 id="怎么样针对特定的概率分布去构造一个概率转移矩阵，使得该概率分布是该转移矩阵的平稳分布？"><a href="#怎么样针对特定的概率分布去构造一个概率转移矩阵，使得该概率分布是该转移矩阵的平稳分布？" class="headerlink" title="怎么样针对特定的概率分布去构造一个概率转移矩阵，使得该概率分布是该转移矩阵的平稳分布？"></a>怎么样针对特定的概率分布去构造一个概率转移矩阵，使得该概率分布是该转移矩阵的平稳分布？</h5><p>对于一般的T是不成立的，但是可以引入一个接受率 $\alpha$</p>
+<h5 id="Metropolis-Hastings-算法"><a href="#Metropolis-Hastings-算法" class="headerlink" title="Metropolis-Hastings 算法"></a>Metropolis-Hastings 算法</h5><p><img src="/2019/04/02/Sampling Methods/Sampling Methods.assets/mcmc-algo-2.jpg" alt="mcmc-algo-2"></p>
+<p><strong>MH算法在高维的时候的收敛局限性</strong></p>
+<h5 id="PRML中对于步长和接受率的讨论"><a href="#PRML中对于步长和接受率的讨论" class="headerlink" title="PRML中对于步长和接受率的讨论"></a>PRML中对于步长和接受率的讨论</h5><h4 id="Gibbs-Sampling"><a href="#Gibbs-Sampling" class="headerlink" title="Gibbs Sampling"></a>Gibbs Sampling</h4><p><img src="/2019/04/02/Sampling Methods/Sampling Methods.assets/1554183122984.png" alt="1554183122984"></p>
+<p><img src="/2019/04/02/Sampling Methods/Sampling Methods.assets/gibbs-transition.png" alt="gibbs-transition"></p>
+<p><img src="/2019/04/02/Sampling Methods/Sampling Methods.assets/1554183276548.png" alt="1554183276548"></p>
+<p><img src="/2019/04/02/Sampling Methods/Sampling Methods.assets/1554183363953.png" alt="1554183363953"></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/25/强化学习算法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="scsndango">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="scsndango的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/25/强化学习算法/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-25 15:45:51 / 修改时间：15:53:53" itemprop="dateCreated datePublished" datetime="2019-01-25T15:45:51+08:00">2019-01-25</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <center> <h1>    强化学习算法    </h1> </center>
+<center> <b>scsn_dango</b> </center>
+
+<p>[TOC]</p>
+<center> <h2>第一部分： RL 基本概念介绍</h2> </center>
+
+<h3 id="RL-定义"><a href="#RL-定义" class="headerlink" title="RL 定义"></a>RL 定义</h3><p>​    在中文维基百科中，强化学习被定义为机器学习中的一个领域，强调如何基于环境而行动，以取得最大化的预期收益 <a href="https://zh.wikipedia.org/wiki/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0" target="_blank" rel="noopener">wikipedia</a>。Richard S. Sutton and Andrew G. Barto 最新的强化学习书籍《Reinforcement Learning: An Introduction II》中对强化学习的定义为: Reinforcement learning is learning what to do—how to map situations to actions——so as to maximize a numerical reward signal. </p>
+<h3 id="RL基本元素"><a href="#RL基本元素" class="headerlink" title="RL基本元素"></a>RL基本元素</h3><p>​    可以看出强化学习至少有这样几个基本概念： <strong>环境(Environment)、主体(Agent)、状态(State)、行动(Action)和收益(Reward)</strong> 。</p>
+<div align="center">    
+    <img src="https://i.imgur.com/um0o5g6.png" width="400" height="200" alt="RL" align="center">
+    <center>图1</center>
+</div>
+
+
+
+<p>​    <strong>环境</strong>是一个外部系统，主体处于这个系统中，能够感知到这个系统并且能够基于感知到的状态做出一定的行动。比如在 MR(Montezuma’s Revenge) 中，环境就是80x80像素大小的游戏界面。</p>
+<p>​    <strong>主体</strong>是一个嵌入到环境中的系统，能够通过采取行动来改变环境的状态。比如在MR中，主体就是玩家操控的小人，小人能够根据当前环境的状态做出一个动作（上下左右移动或者跳跃），从而改变环境的状态。</p>
+<p>​    <strong>状态</strong>是指当前环境的一个时间切片。在MR中就是一张特定时间的80x80大小的图片。</p>
+<p>​    <strong>行动</strong>是指主体做出的行为。在MR中指上下左右、跳跃的操作。</p>
+<p>​    <strong>收益</strong>是一个标量，指的是环境对当前动作或者状态的一个奖励。在MR中指的是系统定义的一个收益，既可以是在游戏回合结束的时候给的 <em>Game Over</em> 或者 <em>Win</em> 这样的全局收益，也可以是一个局部收益，比如拿到 <em>钥匙</em> 或者去到另一个 <em>房间</em>。 </p>
+<h3 id="RL与其他机器学习的关系"><a href="#RL与其他机器学习的关系" class="headerlink" title="RL与其他机器学习的关系"></a>RL与其他机器学习的关系</h3><p>​    RL和传统的机器学习(监督学习 Supervised Learning，非监督学习 Unsupervised Learning，半监督学习 Semi-Supervised Learning)既有一定的联系，也存在很大的区别。大致的包含关系如图2所示。</p>
+<div align="center">    
+    <img src="https://i.imgur.com/TF83oaQ.png" width="300" height="300" alt="RL and ML" align="center">
+    <center>图2</center>
+</div>
+
+
+<p>​    强化学习主要有以下几个特点：</p>
+<p>​    <strong>1. 试错学习</strong>：强化学习一般没有直接的指导信息，Agent 要以不断与 Environment 进行交互，通过试错的方式来获得最佳策略(Policy)。</p>
+<p>​    <strong>2. 延迟回报</strong>：强化学习的指导信息很少，而且往往是在事后（最后一个状态(State)）才给出的。比如 MR 中可能只有在每一次游戏结束以后才有一个 <em>Game Over</em> 或者 <em>Win</em> 的回报。</p>
+<p>​    总的来说，RL与其他机器学习算法不同的地方在于：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. 没有监督者，只有一个Reward信号；</span><br><span class="line">2. 反馈是延迟的，不是立即生成的；</span><br><span class="line">3. 强化学习是序列学习，时间在强化学习中具有重要的意义；</span><br><span class="line">4. Agent的行为会影响以后所有的决策。</span><br></pre></td></tr></table></figure>
+<p>​    RL可以被抽象为一个序列预测的问题，只不过序列是通过类似图灵机一样的原理产生的，后一个State只有在前一个Action做出以后才可以得到。</p>
+<script type="math/tex; mode=display">
+S_0\stackrel{a_0}{\longrightarrow}S_1\stackrel{a_1}{\longrightarrow}...\stackrel{a_{n-1}}{\longrightarrow}S_n</script><p>​    其中$S_i$表示i时刻的State，$a_i$表示i时刻的Action。RL学习的目标就是学习一个根据当前State选择一个能够最大化全局收益的Action，我们把Agent根据State选择Action的方法叫做策略(Policy)。</p>
+<center> <h2>    第二部分：RL 算法    </h2></center>
+
+<p>​    强化学习的算法主要分为两大类： <strong>基于值的算法(Value-Based)</strong> 和 <strong>基于策略的算法(Policy-Based)</strong>。我首先分别介绍一下基于值和基于策略的经典算法，然后介绍一个将基于值和基于策略的算法的优点结合起来的框架——Actor-Critic(AC)框架。在AC框架下进一步介绍目前学术界用得最多的几种强化学习算法，也包括《RND》这篇论文中使用的PPO算法。</p>
+<h3 id="基于值的算法"><a href="#基于值的算法" class="headerlink" title="基于值的算法"></a>基于值的算法</h3><p>​    在介绍基于值的算法之前首先介绍两个概念 <strong>状态价值函数(State Value Function)-V(s)</strong> 和 <strong>行为价值函数(Quality of State-Action function)-Q(s,a)</strong>。</p>
+<p>​    <strong>状态价值函数</strong>：状态价值函数V(s)，输入是一个状态，输出是该状态的预期Reward。  </p>
+<script type="math/tex; mode=display">
+V_{\pi}(s) = E_{\pi}[G_0 | S_0 = s]</script><p>​    其中$\pi$表示Agent选择Action的策略的概率分布， $G_0|S_0=s$表示从状态s开始到$G_0$状态整个序列。所以$V_{\pi}(s)$表示从当前状态开始到达$G_0$状态的预期收益。</p>
+<p>​    特别地，如果我们用$R_t$表示t时刻的预期收益，那么有</p>
+<script type="math/tex; mode=display">
+V_{\pi}(s) = E_{\pi}[G_0 | S_0 = s] = E_{\pi}[\sum_{t=0}^{\infty}{\gamma^{t}R_{t+1}|S_0=s}]</script><p>​    其中$\gamma$表示折扣因子，体现与当前状态更近的状态对与当前状态的预期期望贡献更大。</p>
+<p>​    <strong>行为价值函数</strong>：行为价值函数Q(s,a)，输入是一个状态和一个行动，输出是在该状态下采取该行动的预期收益，那么有</p>
+<script type="math/tex; mode=display">
+Q_{\pi}(s, a) = E_{\pi}[G_0 | S_0 = s, A_0 = a] = E_{\pi}[\sum_{t=0}^{\infty}{\gamma^{t}R_{t+1}|S_0 = s, A_0 = a}]</script><p>​    易知，V(s)和Q(s,a)之间有这样的关系</p>
+<script type="math/tex; mode=display">
+V_{\pi}(s) = \sum_{a \in A}{Q_{\pi}(s, a)}</script><h4 id="Q-learning"><a href="#Q-learning" class="headerlink" title="Q-learning"></a>Q-learning</h4><p>​    下面我们给出经典的Q-learning的算法，伪代码如下所示</p>
+<div align="center">    
+    <img src="https://i.imgur.com/A5r8ysO.png" width="600" height="300" alt="Q-learning pseudocode" align="center">
+</div>
+
+<p>​    Q-learning 算法通过构建和维护一个Q表，Q表中的每一项表示Q(s,a)，来找到一个最优策略，这个策略能够最大化从当前状态开始所有的后继行动的期望收益。</p>
+<p>​    Q-learning最重要的部分在于对于Q值的更新，从伪代码中我们可以看到，对于Q值的更新$\Delta Q$是两部分的差值乘以系数$\alpha$。一部分是$r+\gamma max_{a^{\prime}}Q(s^{\prime}, a^{\prime})$表示当前环境给出的即时回报，r表示当前环境给出的即时回报，$\gamma max_{a^{\prime}}Q(s^{\prime}, a^{\prime})$是对是对$Q(s^{\prime}, a^{\prime})$的最大估计（折扣因子为的最大估计（折扣因子为$\gamma$），所以第一部分总的表示对于当前(s,a)的Q值的现实值；另一部分为Q(s,a)表示Q(s,a)的估计值。</p>
+<p>​    除了Q-learning以外，还有Deep Q-learning、Double Q-learning 和 SARSA等基于值的算法。一般来说基于值的算法都是先评估每个<em>(s, a)</em> 元组的Q值-Q(s,a)，再根据Q值求最优策略，基于值的方法适用于比较简单（状态空间比较小，或者Action数目较小）的问题，它有较高的数据利用率并且能稳定收敛。</p>
+<p>​    对于Q-learning来说，因为需要构建一个Q表，每一个(s,a)元组都需要对应一个Q值，所以只能解决State和Action均可数并且数目较小的问题。Deep Q-learning通过深度神经网络(Deep Neural Network, DNN)来估计一个函数$g: S{\rightarrow}R^{|A|}$用于对每一个State s，计算一个$|A|$维的向量，向量的每一维表示Q(s,a)对应的值，这样就能够应对State数目无穷的情况，但是仍然没办法解决$|A|{\rightarrow}{\infty}$的情况。</p>
+<h3 id="基于策略的算法"><a href="#基于策略的算法" class="headerlink" title="基于策略的算法"></a>基于策略的算法</h3><p>​    我们已经知道Q-learning、DQN等基于价值的方法通过计算每一个状态动作的价值，选择价值最大的动作执行。这是一种间接选择策略的做法，并且几乎没办法处理Action数目无穷的情况。那么我们能不能直接对策略进行建模呢？</p>
+<p>​    一种比较直观的想法是我们可以构建这样一个策略网络(Policy Network) $PN: S {\rightarrow} A$，输入一个状态直接输出对应的Action，而不是得到一个状态价值V(s)或者每个Action对应的Q值Q(s, a)，然后直接对这个策略网络进行更新，从而直接对策略选择建模。如果我们用神经网络来模拟$PN$，那么可以形式化的表示为：</p>
+<script type="math/tex; mode=display">
+a = \pi(s, \theta)\ or\ a = \pi(a|s, \theta)</script><p>​    可以直接输出确定的Action，也可以输出Action的一个概率分布。在输出概率分布的时候，虽然形式上和DQN类似都是$S{\rightarrow}R^{|A|}$，但是DQN输出的是Q值，并且是基于Q值做Action的决策，而$PN$直接得到的是Action的概率分布，并且对于$|A|{\rightarrow} {\infty}$，$PN$能够直接预测出Action。</p>
+<h4 id="Policy-Gradient"><a href="#Policy-Gradient" class="headerlink" title="Policy Gradient"></a>Policy Gradient</h4><p>​    $Policy\ Gradient$是基于策略的算法中最基础的一种算法。通过对收益期望求梯度，从而对Policy Network的参数进行更新。</p>
+<p>​    定义收益期望$J(\theta)$如下：</p>
+<script type="math/tex; mode=display">
+J(\theta) = E_{\tau{\sim}\pi_{\theta}(\tau)}[r(\tau)] = \int_{\tau\sim\pi(\tau)}r(\tau)\pi_{\theta}(\tau)d\tau</script><script type="math/tex; mode=display">
+\theta^{*} = \mathop{argmax}_{\theta}(J(\theta))</script><p>​    对$J(\theta)$求导有</p>
+<script type="math/tex; mode=display">
+\bigtriangledown_{\theta}J(\theta) = \bigtriangledown_{\theta}\int_{\tau\sim\pi(\tau)}r(\tau)\pi_{\theta}(\tau)d\tau=\int_{\tau\sim\pi(\tau)}r(\tau)\bigtriangledown_{\theta}\pi_{\theta}(\tau)d\tau</script><p>​    又因为</p>
+<script type="math/tex; mode=display">
+\bigtriangledown_{\theta}\pi_{\theta}(\tau) = \pi_{\theta}(\tau) \frac{\bigtriangledown_{\theta}\pi_{\theta}(\tau)}{\pi_{\theta}(\tau)} = \pi_{\theta}(\tau)\bigtriangledown_{\theta}log\pi_{\theta}(\tau)</script><script type="math/tex; mode=display">
+\begin{align}
+\bigtriangledown_{\theta}J(\theta) 
+&= \int_{\tau\sim\pi(\tau)}\pi_{\theta}(\tau)r(\tau)\bigtriangledown_{\theta}log\pi_{\theta}(\tau)d\tau 
+\\&= E_{\tau{\sim}\pi_{\theta}(\tau)}[r(\tau)\bigtriangledown_{\theta}log\pi_{\theta}(\tau)]
+\end{align}</script><script type="math/tex; mode=display">
+\begin{align}
+log\pi_{\theta}(\tau) 
+& = log\pi_{\theta}(s_1, a_1, s_2, a_2, ...s_T, a_T) 
+\\&= log\{p(s_1)\prod_{t=1}^{T}[\pi_{\theta}(a_t|s_t)p(s_{t+1}|s_t, a_t)]\}
+\\&= logp(s_1)+\sum_{t=1}^{T}log\pi_{\theta}(a_t|s_t)+\sum_{t=1}^{T}logp(s_{t+1}|s_t, a_t)
+\\&= logp(s_T)+\sum_{t=1}^{T}log\pi_{\theta}(a_t|s_t) = \sum_{t=1}^{T}log\pi_{\theta}(a_t|s_t)
+\end{align}</script><script type="math/tex; mode=display">
+r(\tau) = \sum_{t=1}^{T}r(s_t, a_t)</script><script type="math/tex; mode=display">
+\bigtriangledown_{\theta}J(\theta) 
+= E_{\tau{\sim}\pi_{\theta}(\tau)}[\sum_{t=1}^{T}\bigtriangledown_{\theta} log\pi_{\theta}(a_t|s_t)\sum_{t=1}^{T}r(s_t, a_t)]</script><p>​    最终我们得到了一个漂亮的$\bigtriangledown_{\theta}J(\theta)$的表达式，期望里面包括两个部分$\sum_{t=1}^{T}\bigtriangledown_{\theta} log\pi_{\theta}(a_t|s_t)$表示的是获取当前Trace的概率的梯度，$\sum_{t=1}^{T}r(s_t, a_t)$表示的是当前路径的总的回报。因为回报是一个总的回报，只能在一个轮次之后才能得到，所以Policy Gradient算法只能针对每一轮次更新，无法针对每个step更新。</p>
+<p>​    一个Policy Gradient算法REINFORCE的伪代码如下:<br>​    $1.\ sample {\tau^i} \ from\ \pi_{\theta}(a_t|s_t)\ (run\ the\ policy)$<br>​    $2.\ \bigtriangledown_{\theta}J(\theta) \approx \sum_i(\sum_{t=1}^{T}\bigtriangledown_{\theta} log\pi_{\theta}(a_t^i|s_t^i)\sum_{t=1}^{T}r(s_t^i, a_t^i))$<br>​    $3.\ \theta \leftarrow \theta + \alpha \bigtriangledown_{\theta}J(\theta)​$</p>
+<h3 id="Actor-Critic-框架"><a href="#Actor-Critic-框架" class="headerlink" title="Actor-Critic 框架"></a>Actor-Critic 框架</h3><h4 id="Based-Actor-Critic"><a href="#Based-Actor-Critic" class="headerlink" title="Based Actor-Critic"></a>Based Actor-Critic</h4><p>​    由于最基础的Policy Gradient算法只能实现每轮次更新，很难准确地把Reward反馈回去，训练效率很差，并且很容易不收敛。所以想要将$\sum_{t=1}^{T}r(s_t^i, a_t^i)$ 替换为$Q(s_t^i, a_t^i)$使用价值函数对当前的$(s_t^i, a_t^i)$二元组的期望收益做一个评估，这样就能在每一步获取$\bigtriangledown_{\theta} log\pi_{\theta}(a_t^i|s_t^i)Q(s_t^i, a_t^i)$从而更新参数。</p>
+<p>​    所以最基础的AC框架的期望收益函数$J(\theta)$的梯度有如下的形式：</p>
+<script type="math/tex; mode=display">
+\bigtriangledown_{\theta}J(\theta) 
+= E_{\tau{\sim}\pi_{\theta}(\tau)}[\sum_{t=1}^{T}\bigtriangledown_{\theta} log\pi_{\theta}(a_t|s_t)Q(s_t, a_t)]</script><h4 id="Advantage-Actor-Critic-A2C"><a href="#Advantage-Actor-Critic-A2C" class="headerlink" title="Advantage Actor Critic(A2C)"></a>Advantage Actor Critic(A2C)</h4><p>​    后来研究表明这样的形式计算$Q(s_t, a_t)$有很大的方差。为了减小方差，将$Q(s_t, a_t)$替换为$Q(s_t, a_t) - V(s_t)$，又结合$Q(s,a)$和$V(s)$之间的关系（前文有过相关讨论），得到了一个Advantage函数，形式如下：</p>
+<script type="math/tex; mode=display">
+A^{\pi}(s_t, a_t) = r(s_t, a_t) + V^{\pi}(s_{t+1}) - V^{\pi}(s_t)</script><p>​    所以想要求得$A^{\pi}(s_t, a_t)$的值，我们只需要用一个神经网络对$V(s_t)$建模就好了。伪代码如下：</p>
+<p>​    $batch\ actor\ critic\ algorithm$<br>​    $1.\ sample\ {s_i, a_i}\ from\ \pi_{\theta}(a|s)\ (run\ it\ on\ the\ robot)$<br>​    $2.\ fit\ \hat{V}_{\Phi}^{\pi}(s)\ to\ sampled\ reward\ sums$<br>​    $3.\ evaluate\ \hat{A}^{\pi}(s_i, a_i) =r(s_i, a_i) + \hat{V}_{\Phi}^{\pi}(s_{i}^{\prime}) - \hat{V}_{\Phi}^{\pi}(s_i)$<br>​    $4.\  \bigtriangledown_{\theta}J(\theta) = \sum_i \bigtriangledown_{\theta} log\pi_{\theta}(a_i|s_i)\hat{A}^{\pi}(s_i, a_i)$<br>​    $5.\ \theta \leftarrow \theta + \alpha \bigtriangledown_{\theta}J(\theta)$</p>
+<h4 id="Trust-Region-Policy-Optimization-TRPO"><a href="#Trust-Region-Policy-Optimization-TRPO" class="headerlink" title="Trust Region Policy Optimization (TRPO)"></a>Trust Region Policy Optimization (TRPO)</h4><p>​    虽然A2C很好的把Policy-Based和Value-Based两种方法结合了起来，并且能够做到step级别的更新，但是A2C没有考虑这样的问题：每一次的更新是否能够保证新的策略的$J_{new}(\theta)$大于$J_{old}(\theta)$。</p>
+<p>​    Schulman 2015年发表在ICML的论文《Trust Region Policy Optimization》讨论了这个问题，并且提出了TRPO算法，从理论上能够证明$J_{new}(\theta) \ge J_{old}(\theta)$ 。Schulman把最终的优化问题转换成了</p>
+<script type="math/tex; mode=display">
+\theta_{k+1} = \mathop{argmax}_\theta L(\theta_{k}, \theta)
+\\ s.t.\ \bar{D}_{KL}(\theta || \theta_{k}) \le \delta
+\\ where\ L(\theta_{k}, \theta) = \mathop{E}_{s,a\sim \pi_{\theta_{k}}}[\frac{\pi_{\theta}(a|s)}{\pi_{\theta_{k}}(a|s)}A^{\pi_{\theta_k}}(s,a)]</script><p>​    利用$KL$距离来限制old policy和new policy之间的距离，并且修改了目标函数，使得在满足$KL$限制下，$J_{new}(\theta) \ge J_{old}(\theta)$。</p>
+<p>​    TRPO在理论上和实践中都有很好的效果。</p>
+<h4 id="Proximal-Policy-Optimization-PPO"><a href="#Proximal-Policy-Optimization-PPO" class="headerlink" title="Proximal Policy Optimization(PPO)"></a>Proximal Policy Optimization(PPO)</h4><p>​    TRPO虽然在理论上和实践中都有很好的效果，但是因为最后求解的问题过于复杂，导致训练时间复杂度很高。为了减少时间上的开销，OpenAI又提出了一个TRPO的改进方法PPO，通过一个Clip函数来截断$r_t(\theta)$，从而用很小的代价实现了和$KL$距离的限制条件类似的功能。新的目标函数为：</p>
+<script type="math/tex; mode=display">
+L^{CLIP}(\theta) = \hat{E}_t[\min(r_t(\theta)\hat{A}_t), \mathop{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon)\hat{A}_t]
+\\ r_t(\theta) = \frac{\pi_{\theta}(a_t|s_t)}{\pi_{\theta_{k}}(a_t|s_t)}</script><p><strong>Reference</strong></p>
+<p>[1] Burda Y, Edwards H, Storkey A, et al. Exploration by Random Network Distillation[J]. arXiv preprint arXiv:1810.12894, 2018.</p>
+<p>[2] Schulman J, Wolski F, Dhariwal P, et al. Proximal policy optimization algorithms[J]. arXiv preprint arXiv:1707.06347, 2017.</p>
+<p>[3] Schulman J, Levine S, Abbeel P, et al. Trust region policy optimization[C]//International Conference on Machine Learning. 2015: 1889-1897.</p>
+<p>[4] Sutton R S, McAllester D A, Singh S P, et al. Policy gradient methods for reinforcement learning with function approximation[C]//Advances in neural information processing systems. 2000: 1057-1063.</p>
+<p>[5] Sutton R S, Barto A G. Reinforcement learning: An introduction[M]. MIT press, 2018.</p>
+<p>[6] Watkins C J C H, Dayan P. Q-learning[J]. Machine learning, 1992, 8(3-4): 279-292.</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/07/线性代数基础知识/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="scsndango">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="scsndango的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/07/线性代数基础知识/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-07 12:30:46" itemprop="dateCreated datePublished" datetime="2019-01-07T12:30:46+08:00">2019-01-07</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-09 10:24:37" itemprop="dateModified" datetime="2019-01-09T10:24:37+08:00">2019-01-09</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="行列式的性质"><a href="#行列式的性质" class="headerlink" title="行列式的性质"></a>行列式的性质</h3><ul>
+<li><p>性质1 行列互换，行列式的值不变。（行列式行与列的地位是对称的）</p>
+<p>$|A| = |A^T|$ </p>
+</li>
+<li><p>性质2  行列式一行的公因子可以提出去。 </p>
+<p>$|[x_1, kx_2, …, x_n]^T| = k|[x_1,x_2,…,x_n]^T|$ </p>
+</li>
+<li><p>性质3 行列式中若有一行是两组数的和，则此行列式等于两个行列式的和，这两个行列式的这一行分别是第一组数和第二组数，而其余各行与原来行列式的相应各行相同。</p>
+<p>$|[x_1, a_2+b_2, …, x_n]^T| = |[x_1,a_2,…,x_n]^T|+|[x_1,b_2,…,x_n]^T|$  </p>
+</li>
+<li><p>性质4 两行互换，行列式反号</p>
+<p>$|[x_1, x_2, …, x_n]^T| = -|[x_2,x_1,…,x_n]^T|$ </p>
+</li>
+<li><p>性质5 两行相同，行列式的值为零</p>
+<p>$|[x_1, x_1, …, x_n]^T| = 0$ </p>
+</li>
+<li><p>性质6 两行成比例，行列式的值为零</p>
+<p>$|[x_1, kx_1, …, x_n]^T| = 0$ </p>
+</li>
+<li><p>性质7 把一行的倍数加到另一行上，行列式的值不变</p>
+</li>
+</ul>
+<h3 id="线性子空间"><a href="#线性子空间" class="headerlink" title="线性子空间"></a>线性子空间</h3><p>$K^n$的一个非空子集$U$如果满足：</p>
+<ol>
+<li>$\alpha, \gamma \in U \Longrightarrow \alpha + \gamma \in U$ 对加法封闭</li>
+<li>$\alpha \in U, k \in K \Longrightarrow k\alpha \in U$ 对数量乘法封闭</li>
+</ol>
+<p>则称$U$是$K^n$的一个线性子空间，简称为子空间。</p>
+<p>记$&lt;\alpha_1, \alpha_2, …, \alpha_n&gt;$为向量组$\alpha_1, \alpha_2, …, \alpha_n$<strong>生成的子空间</strong>。</p>
+<h3 id="线性相关、线性无关"><a href="#线性相关、线性无关" class="headerlink" title="线性相关、线性无关"></a>线性相关、线性无关</h3><p>对于向量组$v_1, v_2, …, v_n$ 如果存在<strong>非平凡解</strong> $c = [c_1, c_2, … , c_n]^T$，使得$[v_1 v_2 … v_n]c=0$，那么则称向量组$v_1, v_2, … , v_n$<strong>线性相关</strong>，否则<strong>线性无关</strong>。</p>
+<blockquote>
+<p><strong>平凡解</strong>指的是$c=0$，<strong>非平凡解</strong>指的是存在$c_i \ne 0$。</p>
+</blockquote>
+<p>​    向量组的线性相关性可以推广到矩阵行向量和列向量的线性相关性。对于方阵$A_{n \times n}$，行向量线性相关那么列向量一定线性相关，对于其他矩阵$A_{m \times n}, m \ne n$，则不一定。</p>
+<p>证明：对于矩阵A有：矩阵的秩=行向量的秩=列向量的秩。如果矩阵A是方阵，那么A行向量线性无关 $\Leftrightarrow$ 行向量秩为n $\Leftrightarrow$ rank(A)=n $\Leftrightarrow$ 列向量秩为n $\Leftrightarrow$ 列向量线性无关。然而如果A不是方阵，那么行向量线性无关（行向量满秩）无法推出列向量满秩。</p>
+<p><strong>从线性表出的观点来看</strong></p>
+<p>向量组$\alpha_1, \alpha_2, …, \alpha_n$线性相关$\Longleftrightarrow$其中至少有一个向量可以由其余向量线性表出。</p>
+<h3 id="向量组的秩"><a href="#向量组的秩" class="headerlink" title="向量组的秩"></a>向量组的秩</h3><h4 id="极大线性无关组"><a href="#极大线性无关组" class="headerlink" title="极大线性无关组"></a>极大线性无关组</h4><p>$K^n$中向量组的一个部分组称为一个<strong>极大线性无关组</strong>，如果这个部分组本身是线性无关的，但是从这个向量组的其余向量中任取一个添进去，得到的新的部分组都线性相关。</p>
+<p>两个向量组如果能够相互表出，则它们等价。</p>
+<p>向量组与它的极大线性无关组等价。从而向量组的任意两个极大线性无关组等价。</p>
+<p><strong>等价的线性无关的向量组所含向量的数目相等</strong>。</p>
+<p>向量组的极大线性无关组所含向量的数目称为这个<strong>向量组的秩</strong></p>
+<h3 id="子空间的基与维数"><a href="#子空间的基与维数" class="headerlink" title="子空间的基与维数"></a>子空间的基与维数</h3><p>设$U$是$K^n$的一个子空间，$U$中的向量组$\alpha_1, \alpha_2,…, \alpha_r$如果满足下述两个条件：</p>
+<ol>
+<li>$\alpha_1, \alpha_2, …, \alpha_r$线性无关</li>
+<li>$U$中每一个向量都可以由$\alpha_1, \alpha_2, … , \alpha_r$线性表出，</li>
+</ol>
+<p>则称$\alpha_1, \alpha_2, …, \alpha_r$是$U$的一个<strong>基</strong>。（<strong>标准基</strong>）</p>
+<ul>
+<li>$K^n$的非零子空间$U$的任意两个基所含向量的数目相等，称为$U$的维数，记做$dim\ U$</li>
+<li>设$U,W$是$K^n$的两个非零子空间，如果$U \subset W$,则$dim\ U \le dim\ W$.</li>
+</ul>
+<h3 id="矩阵的秩"><a href="#矩阵的秩" class="headerlink" title="矩阵的秩"></a>矩阵的秩</h3><p>矩阵的秩最开始是通过行列式的概念来定义的。</p>
+<h4 id="矩阵A的k阶子式"><a href="#矩阵A的k阶子式" class="headerlink" title="矩阵A的k阶子式"></a>矩阵A的k阶子式</h4><p>在$m \times n$矩阵A中，任取k行与k列($k \le m, k \le n$)，位于这些行列交叉处的$k^2$个元素不改变相对顺序得到的k阶行列式，称为矩阵A的k阶子式。</p>
+<h4 id="矩阵A的秩"><a href="#矩阵A的秩" class="headerlink" title="矩阵A的秩"></a>矩阵A的秩</h4><p>设在矩阵A中有一个不等于0的r阶子式D，且所有r+1阶子式全等于0，那么子式D称为矩阵A的最高阶非零子式，数r称为矩阵A的秩，记做rank(A)。</p>
+<blockquote>
+<p>矩阵的秩也可以看做行向量或者列向量极大线性无关组的向量个数。</p>
+</blockquote>
+<p>任一矩阵的行秩等于列秩，统称为矩阵的秩，记作rank(A)</p>
+<h3 id="齐次线性方程组的解集的结构"><a href="#齐次线性方程组的解集的结构" class="headerlink" title="齐次线性方程组的解集的结构"></a>齐次线性方程组的解集的结构</h3><h4 id="n元齐次线性方程组"><a href="#n元齐次线性方程组" class="headerlink" title="n元齐次线性方程组"></a>n元齐次线性方程组</h4><script type="math/tex; mode=display">
+x_1\alpha_1 + x_2\alpha_2 + ··· + x_n\alpha_n = 0</script><p>满足上述方程的向量$(x_1, x_2, ···,x_n)$称为<strong>解向量</strong>，所有解向量构成<strong>解集W</strong>.</p>
+<ul>
+<li>性质1 齐次线性方程组的解集W是一个子空间。（对加法和数量乘法封闭）<ul>
+<li>如果$\gamma, \delta \in W,$则$\gamma + \delta \in W$</li>
+<li>如果$\gamma \in W, k \in K$, 则$k\gamma \in W$ </li>
+</ul>
+</li>
+</ul>
+<h4 id="基础解系"><a href="#基础解系" class="headerlink" title="基础解系"></a>基础解系</h4><p>齐次线性方程组有非零解时，如果它的有限多个解$\eta_1, \eta_2, ···, \eta_t$满足：</p>
+<ul>
+<li>$\eta_1, \eta_2, ···, \eta_t$ 线性无关</li>
+<li>方程组的每一个解都可以由$\eta_1, \eta_2, ···, \eta_t$线性表出</li>
+</ul>
+<p>则称$\eta_1, \eta_2, ···, \eta_t$是该齐次线性方程组的一个<strong>基础解系</strong>。</p>
+<p>数域$K$上n元齐次线性方程组的解空间$W$的维数为$dim\ W = n - rank(A)$.</p>
+<h3 id="矩阵的运算"><a href="#矩阵的运算" class="headerlink" title="矩阵的运算"></a>矩阵的运算</h3><h4 id="零因子"><a href="#零因子" class="headerlink" title="零因子"></a>零因子</h4><p>$BA=0 \not \Rightarrow A=0\ ||\ B=0$</p>
+<p>一般地，对于矩阵A，如果存在一个非零矩阵B使得AB=0，则称A是一个<strong>左零因子</strong>；如果存在一个非零矩阵C使得CA=0，则称A是一个<strong>右零因子</strong>。左零因子和右零因子都简称为<strong>零因子</strong>。显然，零矩阵既是左零因子又是右零因子，称<strong>零矩阵是平凡的零因子</strong>，其余的零因子称为<strong>非平凡</strong>的。</p>
+<h4 id="矩阵的可交换"><a href="#矩阵的可交换" class="headerlink" title="矩阵的可交换"></a>矩阵的可交换</h4><p>矩阵的可交换是一个十分重要的性质。</p>
+<h5 id="具有怎样特性的矩阵是可交换的"><a href="#具有怎样特性的矩阵是可交换的" class="headerlink" title="具有怎样特性的矩阵是可交换的"></a>具有怎样特性的矩阵是可交换的</h5><ul>
+<li>单位矩阵和数量矩阵(主对角线上都是同一个数k，其余位置均为零， $kI$)能够与任一同级矩阵可交换。</li>
+</ul>
+<h5 id="可交换的两个矩阵有哪些特性"><a href="#可交换的两个矩阵有哪些特性" class="headerlink" title="可交换的两个矩阵有哪些特性"></a>可交换的两个矩阵有哪些特性</h5><ul>
+<li>如果AB可交换，即$AB=BA$，那么$(AB)^k = A^kB^k$</li>
+</ul>
+<h4 id="特殊矩阵"><a href="#特殊矩阵" class="headerlink" title="特殊矩阵"></a>特殊矩阵</h4><h5 id="对角矩阵"><a href="#对角矩阵" class="headerlink" title="对角矩阵"></a>对角矩阵</h5><p>主对角线以外的元素全为零的方阵称为对角矩阵。记作$diag{d_1, d_2, ···, d_n}$</p>
+<ul>
+<li>$diag{d_1, d_2,···,d_n}diag{c_1,c_2,···,c_n} = diag{d_1c_1, d_2c_2, ···, d_nc_n}$</li>
+</ul>
+<h5 id="上-下-三角矩阵"><a href="#上-下-三角矩阵" class="headerlink" title="上(下)三角矩阵"></a>上(下)三角矩阵</h5><p>主对角线下(上)方元素全为零的方阵称为<strong>上(下)三角矩阵</strong></p>
+<ul>
+<li>两个上(下)三角矩阵的乘积仍然是上(下)三角矩阵</li>
+</ul>
+<h5 id="对称矩阵"><a href="#对称矩阵" class="headerlink" title="对称矩阵"></a>对称矩阵</h5><p>$A=A^T$</p>
+<h5 id="斜-反-对称矩阵"><a href="#斜-反-对称矩阵" class="headerlink" title="斜(反)对称矩阵"></a>斜(反)对称矩阵</h5><p>$A=-A^T$</p>
+<h5 id="对合矩阵"><a href="#对合矩阵" class="headerlink" title="对合矩阵"></a>对合矩阵</h5><p>$A^2=I \Rightarrow rank(I + A) + rank(I - A) =n$</p>
+<h5 id="幂等矩阵"><a href="#幂等矩阵" class="headerlink" title="幂等矩阵"></a>幂等矩阵</h5><p>$A^2 = A$</p>
+<h5 id="正交矩阵"><a href="#正交矩阵" class="headerlink" title="正交矩阵"></a>正交矩阵</h5><p>$AA^T=I$</p>
+<h4 id="矩阵乘积的秩与行列式"><a href="#矩阵乘积的秩与行列式" class="headerlink" title="矩阵乘积的秩与行列式"></a>矩阵乘积的秩与行列式</h4><ul>
+<li>设$A=(a_{ij})_{s\times n}, B=(b_{ij})_{n\times m}$，则$rank(AB) \le min{rank(A), rank(B)}$</li>
+<li>设$A$是实数域上$s\times n$矩阵，则$rank(AA^T) = rank(A^TA) = rank(A)$</li>
+<li>设$A,B$都是n级矩阵，则$|AB|=|A||B|$</li>
+</ul>
+<h4 id="可逆矩阵"><a href="#可逆矩阵" class="headerlink" title="可逆矩阵"></a>可逆矩阵</h4><p>对于数域$K$上的矩阵$A$,如果存在数域$K$上的矩阵$B$，使得$AB=BA=I$，则称$A$是<strong>可逆矩阵</strong>(或<strong>非奇异矩阵</strong>)</p>
+<p>逆矩阵的求解方法(TODO)</p>
+<h5 id="矩阵-A-可逆的等价条件"><a href="#矩阵-A-可逆的等价条件" class="headerlink" title="矩阵$A$可逆的等价条件"></a>矩阵$A$可逆的等价条件</h5><ul>
+<li>$|A| \ne 0$</li>
+<li>$rank(A)=n$</li>
+<li>$A$的行(列)向量线性无关</li>
+<li>$A$的行(列)向量组为$K^n$的一个基</li>
+<li>$A$的行(列)空间等于$K^n$</li>
+</ul>
+<h5 id="可逆矩阵的性质"><a href="#可逆矩阵的性质" class="headerlink" title="可逆矩阵的性质"></a>可逆矩阵的性质</h5><ul>
+<li>设$A$与$B$都是<strong>n级矩阵</strong>，如果$AB=I$，则$A$与$B$都是可逆矩阵，并且$A^{-1}=B, B^{-1} = A$.</li>
+<li>如果n级矩阵$A,B$都可逆，则$AB$也可逆，$(AB)^{-1} = B^{-1}A^{-1}$</li>
+<li>用一个可逆矩阵去左(右)乘矩阵$A$，不改变$A$的秩</li>
+</ul>
+<h4 id="矩阵的分块"><a href="#矩阵的分块" class="headerlink" title="矩阵的分块"></a>矩阵的分块</h4><p>分块对角矩阵</p>
+<p>分块上三角矩阵</p>
+<h4 id="正交矩阵-1"><a href="#正交矩阵-1" class="headerlink" title="正交矩阵"></a>正交矩阵</h4><p>$AA^T=I$ </p>
+<ul>
+<li>$A^{-1} = A^T$</li>
+<li>|A|=1 or -1</li>
+<li>若$A,B$均为正交矩阵，那么$AB$也是正交矩阵</li>
+</ul>
+<h4 id="欧几里得空间中的一些概念"><a href="#欧几里得空间中的一些概念" class="headerlink" title="欧几里得空间中的一些概念"></a>欧几里得空间中的一些概念</h4><p>欧几里得空间$R^n$中，由非零向量组成的向量组如果其中每两个不同的向量都正交(即它们两两正交)，则称它们是<strong>正交向量组</strong>。仅由一个非零向量组成的向量组也是正交向量组。（正交向量组一定是线性无关的）</p>
+<p>如果正交向量组的每个向量都是单位向量，则称它为<strong>正交单位向量组</strong>。</p>
+<p>欧几里得空间$R^n$中,n个向量组成的正交向量组一定是$R^n$的一个基，称它为<strong>正交基</strong>。n个单位向量组成的正交向量组称为$R^n$的一个<strong>标准正交基</strong>。（n级正交矩阵$\Leftrightarrow$ 是$R^n$的一个标准正交基）</p>
+<p>通过$R^n$的一组基底构造正交基(施密特正交化过程)</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/05/Gram矩阵/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="scsndango">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="scsndango的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/05/Gram矩阵/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-05 15:46:16" itemprop="dateCreated datePublished" datetime="2019-01-05T15:46:16+08:00">2019-01-05</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-07 13:37:20" itemprop="dateModified" datetime="2019-01-07T13:37:20+08:00">2019-01-07</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <center><h2>Gram矩阵</h2></center>
+
+<h3 id="Gram矩阵-格拉姆矩阵"><a href="#Gram矩阵-格拉姆矩阵" class="headerlink" title="Gram矩阵(格拉姆矩阵)"></a>Gram矩阵(格拉姆矩阵)</h3><p>$v_1, v_2, …, v_n\ v_i \in \mathbb{R}^n$是内积空间的一组向量, Gram矩阵定义为：$G_{ij} = <v_i, v_j>$，</v_i,></p>
+<ul>
+<li><p>Gram矩阵显然是对称矩阵</p>
+</li>
+<li><p>对于一个$X_{N \times d}$的矩阵，$X \cdot X^T$即为Gram矩阵</p>
+</li>
+<li><p>$rank(AA^T) = rank(A) = rank(A^T)$</p>
+<p>证明:</p>
+<script type="math/tex; mode=display">
+</script></li>
+<li><p>$AA^T=0 \Rightarrow A=0$</p>
+<p>证明:</p>
+<script type="math/tex; mode=display">
+因为rank(AA^T)=rank(A),则有\\
+rank(AA^T)=rank(A)=0, 故A=0</script></li>
+<li><p>欧式空间中向量组$v_1, v_2,…,v_n$的Gram矩阵一定是半正定矩阵，是正定矩阵的充要条件是$v_1, v_2, …, v_n$线性无关。</p>
+</li>
+</ul>
+<h3 id="正定矩阵，半正定矩阵"><a href="#正定矩阵，半正定矩阵" class="headerlink" title="正定矩阵，半正定矩阵"></a>正定矩阵，半正定矩阵</h3><h4 id="正定矩阵"><a href="#正定矩阵" class="headerlink" title="正定矩阵"></a>正定矩阵</h4><h4 id="半正定矩阵"><a href="#半正定矩阵" class="headerlink" title="半正定矩阵"></a>半正定矩阵</h4>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/05/梯度下降法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="scsndango">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="scsndango的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/05/梯度下降法/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-05 15:03:38 / 修改时间：15:04:56" itemprop="dateCreated datePublished" datetime="2019-01-05T15:03:38+08:00">2019-01-05</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><a href="https://www.zhihu.com/question/36301367" target="_blank" rel="noopener">如何直观形象的理解方向导数与梯度以及它们之间的关系？</a></p>
+<p><a href="https://www.jianshu.com/p/af3492b5e49c" target="_blank" rel="noopener">https://www.jianshu.com/p/af3492b5e49c</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/05/强化学习概述/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="scsndango">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="scsndango的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/05/强化学习概述/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-05 00:01:44" itemprop="dateCreated datePublished" datetime="2019-01-05T00:01:44+08:00">2019-01-05</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/05/机器学习概述/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="scsndango">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="scsndango的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/05/机器学习概述/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-05 00:01:38 / 修改时间：12:11:08" itemprop="dateCreated datePublished" datetime="2019-01-05T00:01:38+08:00">2019-01-05</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <center><h2>机器学习概述</h2></center>
+
+<ul>
+<li><p>什么是机器学习（周志华，Mitchell）</p>
+</li>
+<li><p>机器学习任务分类</p>
+</li>
+<li><p>机器学习算法列表</p>
+<p>机器学习是一个很大的题目，目前还没有能力系统的阐述什么是机器学习，我先从三个方面简要说明一下机器学习，希望通过以后的学习能够对机器学习有更加深入的了解，进而重新认识机器学习。</p>
+<h4 id="什么是机器学习？"><a href="#什么是机器学习？" class="headerlink" title="什么是机器学习？"></a>什么是机器学习？</h4><p>周志华老师在《机器学习》一书中认为：机器学习致力于研究如何通过计算的手段，利用经验来改善系统自身的性能。</p>
+<p>Mitshell，在他的书中给出了一个较为形式化的定义：</p>
+<blockquote>
+<p>假设用$P$来评估计算机程序在某任务类$T$上的性能，若一个程序通过利用经验$E$在$T$中任务上获得了性能改善，则我们就说关于$T$和$P$，该程序对$E$进行了学习。</p>
+</blockquote>
+<h4 id="机器学习分类"><a href="#机器学习分类" class="headerlink" title="机器学习分类"></a>机器学习分类</h4><p>机器学习从已知的数据集$D$学习经验，对于$D$中的一个数据$(x,y)$，我们用$x$表示数据内容，$y$表示数据标签。根据数据$y$的已知程度，可以把机器学习分为：<strong>监督学习(supervised learning)</strong>，<strong>半监督学习(semi-supervised learning)</strong>，<strong>无监督学习(unsupervised learning)</strong>。</p>
+<ul>
+<li>监督学习指的是所有训练数据的数据标签$y$都已知</li>
+<li>半监督学习指的是部分训练数据的数据标签$y$已知，部分标签未知</li>
+<li>无监督学习指的是所有训练数据的数据标签$y$都未知</li>
+</ul>
+<p>另外，在监督学习中，还有一类情况比较特殊，当前的监督信息跟上一步的预测结果相关，具有序列性，这种一般被称为<strong>强化学习(Reinforcement learning)</strong>。</p>
+<h4 id="机器学习算法"><a href="#机器学习算法" class="headerlink" title="机器学习算法"></a>机器学习算法</h4><p>机器学习主要通过不同的算法来从已知数据（经验）中学习，常见的算法有如下几种：</p>
+<p>分类算法：</p>
+<p>感知机、SVM、决策树、HMM、CRF、最大熵、KNN</p>
+<p>回归算法：</p>
+</li>
+</ul>
+<p>  聚类算法：</p>
+<p>  K-means、分层聚类、谱聚类</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/04/Ubuntu实现特定功能的shell命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="scsndango">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="scsndango的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/04/Ubuntu实现特定功能的shell命令/" class="post-title-link" itemprop="url">未命名</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-04 20:10:33 / 修改时间：23:01:55" itemprop="dateCreated datePublished" datetime="2019-01-04T20:10:33+08:00">2019-01-04</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <center><h2>Ubuntu实现特定功能的shell命令</h2></center>
+
+<p>[TOC]</p>
+<h3 id="查看计算机计算资源的使用情况"><a href="#查看计算机计算资源的使用情况" class="headerlink" title="查看计算机计算资源的使用情况"></a>查看计算机计算资源的使用情况</h3><p><code>top</code>、<code>htop</code> </p>
+<p><code>top</code>是Linux下常用的性能分析工具，能够实时显示系统中各个进程的资源占用状况，类似于Windows的任务管理器。</p>
+<p>第七行以下：各进程（任务）的状态监控，项目列信息说明如下：</p>
+<p>PID — 进程id</p>
+<p>USER — 进程所有者</p>
+<p>PR — 进程优先级</p>
+<p>NI — nice值。负值表示高优先级，正值表示低优先级</p>
+<p>VIRT — 进程使用的虚拟内存总量，单位kb。VIRT=SWAP+RES</p>
+<p>RES — 进程使用的、未被换出的物理内存大小，单位kb。RES=CODE+DATA</p>
+<p>SHR — 共享内存大小，单位kb</p>
+<p>S — 进程状态。D=不可中断的睡眠状态 R=运行 S=睡眠 T=跟踪/停止 Z=僵尸进程</p>
+<p>%CPU — 上次更新到现在的CPU时间占用百分比</p>
+<p>%MEM — 进程使用的物理内存百分比</p>
+<p>TIME+ — 进程使用的CPU时间总计，单位1/100秒</p>
+<p>COMMAND — 进程名称（命令名/命令行）</p>
+<p><strong>通过”shift + &gt;”或”shift + &lt;”可以向右或左改变排序列</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">top -c #显示完整命令</span><br><span class="line">top -p 574 #显示指定的进程信息</span><br></pre></td></tr></table></figure>
+<h3 id="查看磁盘使用情况"><a href="#查看磁盘使用情况" class="headerlink" title="查看磁盘使用情况"></a>查看磁盘使用情况</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df -h #查看所有挂载磁盘使用情况</span><br><span class="line">du -h --max-depth=1 #查看当前文件夹下文件及文件夹的空间占用情况</span><br></pre></td></tr></table></figure>
+<h3 id="查看某个进程的详细信息"><a href="#查看某个进程的详细信息" class="headerlink" title="查看某个进程的详细信息"></a>查看某个进程的详细信息</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">htop -p PID #在htop的界面中置顶指定PID进程的信息</span><br><span class="line">ps -aux | grep PID #查看进程信息包括PID的进程的详细信息</span><br></pre></td></tr></table></figure>
+<h3 id="查看拥有sudo权限的用户列表"><a href="#查看拥有sudo权限的用户列表" class="headerlink" title="查看拥有sudo权限的用户列表"></a>查看拥有sudo权限的用户列表</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/sudoers</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
 
 
           </div>
@@ -669,7 +2156,7 @@ b = \sum_{i=1}^N\alpha_iy_i</script><p>对于对偶形式的感知机学习算�
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">25</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -862,6 +2349,22 @@ b = \sum_{i=1}^N\alpha_iy_i</script><p>对于对偶形式的感知机学习算�
     
       
         
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
       
     
       
