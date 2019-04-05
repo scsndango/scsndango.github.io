@@ -104,7 +104,7 @@
 <meta property="og:description" content="简介感知机算法是最简单最基础的机器学习算法，可以用于处理最简单的二分类任务，并且模型和学习算法都十分简单。感知机1957年由Rosenblatt提出，是神经网络与支持向量机的基础。 感知机模型感知机是二类分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取+1和-1二值。感知机模型对应于特征空间中的一个分离超平面。 模型的数学表示感知机其实是一个由输入空间$\mathcal{X} \s">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/04/04/感知机算法/1546667366267.png">
-<meta property="og:updated_time" content="2019-04-04T13:34:22.008Z">
+<meta property="og:updated_time" content="2019-04-05T08:33:35.406Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="感知机算法">
 <meta name="twitter:description" content="简介感知机算法是最简单最基础的机器学习算法，可以用于处理最简单的二分类任务，并且模型和学习算法都十分简单。感知机1957年由Rosenblatt提出，是神经网络与支持向量机的基础。 感知机模型感知机是二类分类的线性分类模型，其输入为实例的特征向量，输出为实例的类别，取+1和-1二值。感知机模型对应于特征空间中的一个分离超平面。 模型的数学表示感知机其实是一个由输入空间$\mathcal{X} \s">
@@ -334,12 +334,24 @@
                 
               
 
-              <time title="创建时间：2019-04-04 10:26:39 / 修改时间：21:34:22" itemprop="dateCreated datePublished" datetime="2019-04-04T10:26:39+08:00">2019-04-04</time>
+              <time title="创建时间：2019-04-04 10:26:39" itemprop="dateCreated datePublished" datetime="2019-04-04T10:26:39+08:00">2019-04-04</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-05 16:33:35" itemprop="dateModified" datetime="2019-04-05T16:33:35+08:00">2019-04-05</time>
               
             
           </span>
@@ -400,7 +412,7 @@ f(x) = \mathop{sign} (w·x+b)
 +1, & x \ge 0 \\
 -1, & x < 0  
 \end{array} \right.</script><p>其中$w,b$是感知机模型的参数，$w \in \mathbb{R}^n$叫做权值(weight)或权值向量(weight vector)，$b \in \mathbb{R}$叫做偏置(bias)。 </p>
-<p>感知机模型的假设空间是定义在特征空间中的所有线性分类模型(linear classification model)或线性分类器(linear classifier)，即函数集合${f\mid f(x) = w·x + b}​$。</p>
+<p>感知机模型的假设空间是定义在特征空间中的所有线性分类模型(linear classification model)或线性分类器(linear classifier)，即函数集合${f\mid f(x) = w·x + b}$。</p>
 <h4 id="几何解释"><a href="#几何解释" class="headerlink" title="几何解释"></a>几何解释</h4><p>由感知机的定义可以知道，对于数据$x$，如果$w·x+b&gt;0$那$x$对应的标签为+1，如果$w·x+b&lt;0$那么$x$对应的标签为-1。故感知机实际上定义了一个超平面$w·x+b=0$，这个超平面将特征空间划分为两个部分。位于两部分的点(特征向量)分别被分为正、负两类，如下图所示：</p>
 <p><img src="/2019/04/04/感知机算法/1546667366267.png" alt="1546667366267"></p>
 <h3 id="感知机学习策略"><a href="#感知机学习策略" class="headerlink" title="感知机学习策略"></a>感知机学习策略</h3><p>首先感知机是一个线性分类器（二分类），我们先考虑训练数据集线性可分的情形。</p>
@@ -582,7 +594,9 @@ b = \sum_{i=1}^N\alpha_iy_i</script><p>对于对偶形式的感知机学习算�
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   
                 </div>
